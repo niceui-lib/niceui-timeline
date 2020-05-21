@@ -1,0 +1,53 @@
+.timeline {
+  --serieGuide: red;
+  --serieBackground: green;
+  --zoom: 1;
+
+  bottom: 0;
+  border: 1px solid green;
+  overflow: scroll;
+
+  & .serie {
+    --start: 0;
+    --duration: 0;
+    position: relative;
+    left: calc(var(--start) * var(--zoom) * 1em);
+    width: calc(var(--duration) * var(--zoom) * 1em);
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    min-height: 1em;
+    min-width: 0.5em;
+    border: 1px solid var(--serieBackground);
+    margin: 1px 1px 1px 1px;
+
+    & .label {
+      position: absolute;
+      lost-align: center;
+    }
+
+    & .left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      min-width: 0.25em;
+      background-color: var(--serieGuide);
+      cursor: ew-resize;
+    }
+
+    & .right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      min-width: 0.25em;
+      background-color: var(--serieGuide);
+      cursor: ew-resize;
+    }
+  }
+}
+
+.editor {
+  background-color: #000;
+}

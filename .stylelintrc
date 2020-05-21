@@ -1,0 +1,6 @@
+{
+  "extends": ["stylelint-config-recommended", "stylelint-config-lost"],
+  "rules": {
+    "selector-nested-pattern": "^&"
+  }
+}
