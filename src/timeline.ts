@@ -1,4 +1,4 @@
-import * as styles from "./styles.module.css";
+import styles from "./styles.module.css";
 import { TimelineSerie } from "./timeline_serie";
 
 export class Timeline {

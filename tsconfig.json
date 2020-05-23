@@ -9,7 +9,9 @@
     "moduleResolution": "node",
     "target": "es2017",
     "allowJs": true,
-    "declaration": true
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
   "include": ["./src/**/*"],
   "exclude": ["./__tests__/", "**/*.test.ts"]
